@@ -1,8 +1,13 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import momosuzuneneJson from './assets/json/momosuzunene.json'
+// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+  <ul>
+    <li v-for="momosuzunene in momosuzuneneJson" :key="momosuzunene.thumbnail">{{ momosuzunene.title }}</li>
+  </ul>
+  <!-- 
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -12,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+   -->
 </template>
 
 <style scoped>
