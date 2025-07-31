@@ -23,7 +23,7 @@ const filteredData = computed(() => {
 
 <template>
   <div class="wapper">
-    <h1>桃鈴ねね YouTube動画 アーカイブ</h1>
+    <h1 class="main-title">桃鈴ねね YouTube動画 検索<br>（〜2025/07/30）</h1>
     <div class="serch-warp">
       <input v-model="keyword" placeholder="キーワードで検索" class="input-keyword" />
       <input type="date" v-model="startDate" class="input-startdate" />
@@ -48,6 +48,8 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss" scoped>
+@use '../src/assets/scss/mq' as *;
+
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.2s ease;
@@ -61,8 +63,18 @@ const filteredData = computed(() => {
   width: 960px;
   margin: 0 auto;
 
-  h1 {
-    font-size: 3.4rem;
+  @include mq($until: desktop) {
+    width: 100vw;
+    padding: 12px 18px;
+  }
+}
+
+.main-title {
+  margin: 18px 0;
+  font-size: 3.4rem;
+
+  @include mq($until: desktop) {
+    font-size: 1.8rem;
   }
 }
 
@@ -72,6 +84,10 @@ const filteredData = computed(() => {
   span {
     font-size: 1.8rem;
     padding: 0 12px;
+
+    @include mq($until: desktop) {
+      padding: 0px;
+    }
   }
 }
 
@@ -79,6 +95,13 @@ const filteredData = computed(() => {
   width: 300px;
   height: 40px;
   font-size: 1.8rem;
+
+  @include mq($until: desktop) {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 12px;
+  }
 }
 
 .input-startdate {
@@ -86,12 +109,21 @@ const filteredData = computed(() => {
   height: 40px;
   font-size: 1.8rem;
   margin-left: 24px;
+
+  @include mq($until: desktop) {
+    width: 35vw;
+    margin-left: 0;
+  }
 }
 
 .input-enddate {
   width: 150px;
   height: 40px;
   font-size: 1.8rem;
+
+  @include mq($until: desktop) {
+    width: 35vw;
+  }
 }
 
 .serch-num {
@@ -102,7 +134,7 @@ const filteredData = computed(() => {
   border-radius: 20px;
 
   &:hover {
-    background-color: #ffb65d;
+    background-color: #ffd49e;
     transition: all 0.1s ease-in;
   }
 }
@@ -121,10 +153,18 @@ const filteredData = computed(() => {
 
 .item-list-title {
   font-size: 1.8rem;
+
+  @include mq($until: desktop) {
+    font-size: 1.4rem;
+  }
 }
 
 .item-list-date {
   font-size: 1.4rem;
   margin-top: 8px;
+
+  @include mq($until: desktop) {
+    font-size: 1.2rem;
+  }
 }
 </style>
