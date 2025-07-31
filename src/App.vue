@@ -74,15 +74,6 @@ const filteredData = computed(() => {
   }
 }
 
-@keyframes pulsate {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
 .main-title {
   img {
     width: 480px;
