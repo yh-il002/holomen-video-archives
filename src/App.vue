@@ -25,7 +25,7 @@ const filteredData = computed(() => {
   <div class="wapper" id="top">
     <!-- <h1 class="main-title">桃鈴ねね YouTube動画 検索<br>（〜2025/07/30）</h1> -->
     <h1 class="main-title">
-      <img src="./assets/images/mv.png" alt="桃鈴ねね YouTube動画 検索">
+      <img src="/images/mv.png" alt="桃鈴ねね YouTube動画 検索">
     </h1>
     <div class="serch-warp">
       <input v-model="keyword" placeholder="キーワードで検索" class="input-keyword" />
