@@ -22,8 +22,11 @@ const filteredData = computed(() => {
 </script>
 
 <template>
-  <div class="wapper">
-    <h1 class="main-title">桃鈴ねね YouTube動画 検索<br>（〜2025/07/30）</h1>
+  <div class="wapper" id="top">
+    <!-- <h1 class="main-title">桃鈴ねね YouTube動画 検索<br>（〜2025/07/30）</h1> -->
+    <h1 class="main-title">
+      <img src="./assets/images/mv.png" alt="桃鈴ねね YouTube動画 検索">
+    </h1>
     <div class="serch-warp">
       <input v-model="keyword" placeholder="キーワードで検索" class="input-keyword" />
       <input type="date" v-model="startDate" class="input-startdate" />
@@ -44,6 +47,7 @@ const filteredData = computed(() => {
         </div>
       </transition-group>
     </div>
+    <a href="#top" class="top-link">TOPへ</a>
   </div>
 </template>
 
@@ -60,6 +64,7 @@ const filteredData = computed(() => {
 }
 
 .wapper {
+  position: relative;
   width: 960px;
   margin: 0 auto;
 
@@ -69,9 +74,25 @@ const filteredData = computed(() => {
   }
 }
 
+@keyframes pulsate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 .main-title {
-  margin: 18px 0;
-  font-size: 3.4rem;
+  img {
+    width: 480px;
+    margin: 0 auto;
+    animation: pulsate 0.8s ease-in-out infinite;
+
+    @include mq($until: desktop) {
+      width: 70vw;
+    }
+  }
 
   @include mq($until: desktop) {
     font-size: 1.8rem;
@@ -165,6 +186,39 @@ const filteredData = computed(() => {
 
   @include mq($until: desktop) {
     font-size: 1.2rem;
+  }
+}
+
+.top-link {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in;
+
+  @include mq($until: desktop) {
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    opacity: 0.5;
+
+    @include mq($until: desktop) {
+      opacity: 1;
+    }
   }
 }
 </style>
