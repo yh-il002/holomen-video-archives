@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     open: true,
   },
-  base: '/dist/',
+  base: '/holomen-video-archives/dist/',
 })
