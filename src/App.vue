@@ -33,15 +33,17 @@ const filteredData = computed(() => {
     </div>
     <div class="serch-num">検索結果：{{ filteredData.length }}件</div>
     <div class="item-list-wrap">
-      <div v-for="item in filteredData" :key="item.title" class="item-list">
-        <a :href="item.youtube_url" class="item-list-link" target="_blank">
-          <img :src="item.thumbnail_url" alt="" class="item-list-thumbnail">
-          <div>
-            <h2 class="item-list-title">{{ item.title }}</h2>
-            <p class="item-list-date">{{ item.release_date }}</p>
-          </div>
-        </a>
-      </div>
+      <transition-group name="fade" tag="div">
+        <div v-for="item in filteredData" :key="item.title" class="item-list">
+          <a :href="item.youtube_url" class="item-list-link" target="_blank">
+            <img :src="item.thumbnail_url" alt="" class="item-list-thumbnail">
+            <div>
+              <h2 class="item-list-title">{{ item.title }}</h2>
+              <p class="item-list-date">{{ item.release_date }}</p>
+            </div>
+          </a>
+        </div>
+      </transition-group>
     </div>
   </div>
   <!-- 
@@ -70,6 +72,16 @@ const filteredData = computed(() => {
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 } */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  // transform: translateY(5px);
+}
 
 .wapper {
   width: 960px;
