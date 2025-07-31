@@ -23,15 +23,21 @@ const filteredData = computed(() => {
 </script>
 
 <template>
+  <h1>桃鈴ねね YouTube動画 アーカイブ</h1>
   <div>
     <input v-model="keyword" placeholder="キーワードで検索" />
-    <input type="date" v-model="startDate" />
-    <input type="date" v-model="endDate" />
+    <label>開始日：<input type="date" v-model="startDate" /></label>
+    <label>終了日：<input type="date" v-model="endDate" /></label>
   </div>
-  <ul>
-    <!-- <li v-for="momosuzunene in momosuzuneneJson" :key="momosuzunene.thumbnail">{{ momosuzunene.title }}</li> -->
-    <li v-for="item in filteredData" :key="item.title">{{ item.title }} - {{ item.release_date }}</li>
-  </ul>
+  <div class="item-list-wrap">
+    <div v-for="item in filteredData" :key="item.title" class="item-list">
+      <a :href="item.youtube_url" class="item-list-link" target="_blank">
+        <img :src="item.thumbnail_url" alt="" class="item-list-thumbnail">
+        <h2 class="item-list-title">{{ item.title }}</h2>
+        <p class="item-list-date">{{ item.release_date }}</p>
+      </a>
+    </div>
+  </div>
   <!-- 
   <div>
     <a href="https://vite.dev" target="_blank">
