@@ -88,6 +88,7 @@ const filteredData = computed(() => {
     width: 480px;
     margin: 0 auto;
     animation: pulsate 0.8s ease-in-out infinite;
+    will-change: transform;
 
     @include mq($until: desktop) {
       width: 70vw;
