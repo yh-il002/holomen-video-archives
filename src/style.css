@@ -71,3 +71,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
