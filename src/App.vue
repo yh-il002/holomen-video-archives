@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link>
+      <router-link to="/">桃鈴ねねYouTube動画検索</router-link>
       |
       <router-link to="/about">About</router-link>
     </nav>
+    <p>↑ページ切り替え</p>
     <router-view />
   </div>
 </template>
@@ -16,5 +17,9 @@
 nav {
   margin-bottom: 1rem;
   font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
 }
 </style>
