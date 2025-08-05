@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import jsonData from '../assets/json/hologura.json'
+import MainTitle from '../components/MainTitle.vue'
+
 const keyword = ref('')
 const startDate = ref('')
 const endDate = ref('')
@@ -23,8 +25,8 @@ const filteredData = computed(() => {
 
 <template>
   <div class="wapper" id="top">
-    <h1 class="main-title">ホロぐら検索（〜2025/08/03）</h1>
-    <div class="serch-warp">
+    <MainTitle title="ホロぐら検索（〜2025/08/03）" />
+    <div class="serch-wrap">
       <input v-model="keyword" placeholder="キーワードで検索" class="input-keyword" />
       <input type="date" v-model="startDate" class="input-startdate" />
       <span>〜</span>
@@ -71,25 +73,7 @@ const filteredData = computed(() => {
   }
 }
 
-.main-title {
-  font-size: 3.2rem;
-  img {
-    width: 480px;
-    margin: 0 auto;
-    animation: pulsate 0.8s ease-in-out infinite;
-    will-change: transform;
-
-    @include mq($until: desktop) {
-      width: 70vw;
-    }
-  }
-
-  @include mq($until: desktop) {
-    font-size: 1.8rem;
-  }
-}
-
-.serch-warp {
+.serch-wrap {
   margin: 24px 0;
 
   span {

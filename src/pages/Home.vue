@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import momosuzuneneJson from '../assets/json/momosuzunene.json'
+import MainTitle from '../components/MainTitle.vue'
+
 const keyword = ref('')
 const startDate = ref('')
 const endDate = ref('')
@@ -23,11 +25,8 @@ const filteredData = computed(() => {
 
 <template>
   <div class="wapper" id="top">
-    <!-- <h1 class="main-title">桃鈴ねね YouTube動画 検索<br>（〜2025/07/30）</h1> -->
-    <h1 class="main-title">
-      <img src="/images/mv.png" alt="桃鈴ねね YouTube動画 検索">
-    </h1>
-    <div class="serch-warp">
+    <MainTitle title="桃鈴ねねYouTube動画検索（〜2025/08/01）" />
+    <div class="serch-wrap">
       <input v-model="keyword" placeholder="キーワードで検索" class="input-keyword" />
       <input type="date" v-model="startDate" class="input-startdate" />
       <span>〜</span>
@@ -74,24 +73,7 @@ const filteredData = computed(() => {
   }
 }
 
-.main-title {
-  img {
-    width: 480px;
-    margin: 0 auto;
-    animation: pulsate 0.8s ease-in-out infinite;
-    will-change: transform;
-
-    @include mq($until: desktop) {
-      width: 70vw;
-    }
-  }
-
-  @include mq($until: desktop) {
-    font-size: 1.8rem;
-  }
-}
-
-.serch-warp {
+.serch-wrap {
   margin: 24px 0;
 
   span {
