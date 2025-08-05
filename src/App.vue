@@ -4,8 +4,10 @@
       <router-link to="/">桃鈴ねねYouTube動画検索</router-link>
       |
       <router-link to="/about">About</router-link>
+      |
+      <router-link to="/hologura">ホロぐら検索</router-link>
     </nav>
-    <p>↑ページ切り替え</p>
+    <p>↑↑↑↑↑ページ切り替え↑↑↑↑↑</p>
     <router-view />
   </div>
 </template>
