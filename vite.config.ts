@@ -1,11 +1,13 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-  server: {
-    open: true,
-  },
-  base: '/holomen-video-archives/dist/',
+export default defineConfig(({ mode }) => {
+  return {
+    plugins: [vue()],
+    server: {
+      open: true,
+    },
+    base: mode === 'production' ? '/holomen-video-archives/dist/' : '/',
+  }
 })
