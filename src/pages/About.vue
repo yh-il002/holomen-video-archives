@@ -1,0 +1,3 @@
+<template>
+  <h1>アバウトページ</h1>
+</template>
