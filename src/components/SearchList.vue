@@ -128,7 +128,7 @@ const filteredData = computed(() => {
   border-radius: 20px;
 
   &:hover {
-    background-color: #ffd49e;
+    background-color: #cef2ff;
     transition: all 0.1s ease-in;
   }
 }
