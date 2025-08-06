@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav>
+    <nav id="nav">
       <ul>
         <li><router-link to="/">桃鈴ねね</router-link></li>
         <li><router-link to="/hologura">ホロぐら</router-link></li>
