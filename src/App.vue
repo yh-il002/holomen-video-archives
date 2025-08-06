@@ -37,12 +37,10 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 12px;
-    background-color: #27c7ff;
-    border-radius: 50px;
+    column-gap: 8px;
 
     @include mq($until: desktop) {
       width: 90vw;
-      border-radius: 25px;
       grid-template-columns: repeat(3, 1fr);
     }
   }
@@ -50,9 +48,12 @@ nav {
   li {
     font-size: 2.2rem;
     text-align: center;
+    padding: 8px 0;
+    background-color: #27c7ff;
+    border-radius: 50px;
 
     @include mq($until: desktop) {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
 
     &:hover {
