@@ -4,6 +4,7 @@
       <ul>
         <li><router-link to="/">このサイトは？</router-link></li>
         <li><router-link to="/hologura">ホロぐら</router-link></li>
+        <li><router-link to="/oozorasubaru">大空スバル</router-link></li>
         <li><router-link to="/momosuzunene">桃鈴ねね</router-link></li>
         <li><router-link to="/omaruporuka">尾丸ポルカ</router-link></li>
         <li><router-link to="/ichijouririka">一条莉々華</router-link></li>

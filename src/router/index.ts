@@ -2,6 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Top from '../pages/Top.vue'
 import HoloGura from '../pages/HoloGura.vue'
+import OozoraSubaru from '../pages/OozoraSubaru.vue'
 import MomosuzuNene from '../pages/MomosuzuNene.vue'
 import OmaruPoruka from '../pages/OmaruPoruka.vue'
 import IchijouRirika from '../pages/IchijouRirika.vue'
@@ -21,6 +22,11 @@ const routes = [
     path: '/hologura',
     name: 'HoloGura',
     component: HoloGura
+  },
+  { 
+    path: '/oozorasubaru',
+    name: 'OozoraSubaru',
+    component: OozoraSubaru
   },
   { 
     path: '/momosuzunene',
