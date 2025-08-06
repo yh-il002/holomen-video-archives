@@ -6,7 +6,7 @@ import TopLink from '../components/TopLink.vue'
 </script>
 
 <template>
-  <MainTitle title="桃鈴ねねYouTube動画検索（〜2025/08/01）" />
+  <MainTitle title="桃鈴ねねYouTube動画検索" />
   <SearchList :data="dataJson" />
   <TopLink />
 </template>

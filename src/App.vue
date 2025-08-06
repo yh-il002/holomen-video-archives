@@ -3,9 +3,11 @@
     <nav id="nav">
       <ul>
         <li><router-link to="/">TOP</router-link></li>
+        <li><router-link to="/hologura">ホロぐら</router-link></li>
         <li><router-link to="/momosuzunene">桃鈴ねね</router-link></li>
         <li><router-link to="/omaruporuka">尾丸ポルカ</router-link></li>
-        <li><router-link to="/hologura">ホロぐら</router-link></li>
+        <li><router-link to="/ichijouririka">一条莉々華</router-link></li>
+        <li><router-link to="/juufuuteiraden">儒烏風亭らでん</router-link></li>
       </ul>
     </nav>
     <div class="wapper">
@@ -32,11 +34,14 @@ nav {
     padding: 12px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 12px;
     background-color: #27c7ff;
     border-radius: 50px;
 
     @include mq($until: desktop) {
       width: 90vw;
+      border-radius: 25px;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 

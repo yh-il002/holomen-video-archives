@@ -6,7 +6,7 @@ import TopLink from '../components/TopLink.vue'
 </script>
 
 <template>
-  <MainTitle title="ホロぐら検索（〜2025/08/03）" />
+  <MainTitle title="ホロぐら検索" />
   <SearchList :data="dataJson" />
   <TopLink />
 </template>
