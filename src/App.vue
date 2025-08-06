@@ -2,7 +2,7 @@
   <div id="app">
     <nav id="nav">
       <ul>
-        <li><router-link to="/">TOP</router-link></li>
+        <li><router-link to="/">このサイトは？</router-link></li>
         <li><router-link to="/hologura">ホロぐら</router-link></li>
         <li><router-link to="/momosuzunene">桃鈴ねね</router-link></li>
         <li><router-link to="/omaruporuka">尾丸ポルカ</router-link></li>
