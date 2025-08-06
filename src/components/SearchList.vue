@@ -17,6 +17,7 @@ const props = defineProps<{
 const keyword = ref('')
 const startDate = ref('')
 const endDate = ref('')
+const inputRef = ref<HTMLInputElement | null>(null) 
 
 const filteredData = computed(() => {
   return props.data.filter(item => {
@@ -32,12 +33,16 @@ const filteredData = computed(() => {
     return matchesKeyword && matchesDate
   })
 })
+
+function closeKeyboard() {
+  inputRef.value && inputRef.value.blur()
+}
 </script>
 
 <template>
   <div>
     <div class="serch-wrap">
-      <input v-model="keyword" placeholder="キーワードで検索" class="input-keyword" />
+      <input v-model="keyword" placeholder="キーワードで検索" class="input-keyword" @keydown.enter="closeKeyboard" />
       <input type="date" v-model="startDate" class="input-startdate" />
       <span>〜</span>
       <input type="date" v-model="endDate" class="input-enddate" />
