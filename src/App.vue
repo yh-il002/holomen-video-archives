@@ -7,7 +7,9 @@
         <li><router-link to="/about">About</router-link></li>
       </ul>
     </nav>
-    <router-view />
+    <div class="wapper">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -53,6 +55,17 @@ nav {
       color: #fff;
       font-weight: bold;
     }
+  }
+}
+
+.wapper {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+
+  @include mq($until: desktop) {
+    width: 100vw;
+    padding: 12px 18px;
   }
 }
 </style>
