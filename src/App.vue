@@ -2,9 +2,9 @@
   <div id="app">
     <nav id="nav">
       <ul>
-        <li><router-link to="/">桃鈴ねね</router-link></li>
+        <li><router-link to="/">TOP</router-link></li>
+        <li><router-link to="/momosuzunene">桃鈴ねね</router-link></li>
         <li><router-link to="/hologura">ホロぐら</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
       </ul>
     </nav>
     <div class="wapper">
@@ -54,6 +54,8 @@ nav {
     a {
       color: #fff;
       font-weight: bold;
+      display: inline-block;
+      width: 100%;
     }
   }
 }

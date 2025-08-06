@@ -1,13 +1,25 @@
 // src/router/index.ts
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../pages/Home.vue'
-import About from '../pages/About.vue'
+import Top from '../pages/Top.vue'
+import MomosuzuNene from '../pages/MomosuzuNene.vue'
 import HoloGura from '../pages/HoloGura.vue'
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/about', name: 'About', component: About },
-  { path: '/hologura', name: 'HoloGura', component: HoloGura },
+  { 
+    path: '/',
+    name: 'Top',
+    component: Top
+  },
+  { 
+    path: '/momosuzunene',
+    name: 'MomosuzuNene',
+    component: MomosuzuNene
+  },
+  { 
+    path: '/hologura',
+    name: 'HoloGura',
+    component: HoloGura
+  },
 ]
 
 const router = createRouter({
