@@ -6,8 +6,10 @@ import MomosuzuNene from '../pages/MomosuzuNene.vue'
 import OmaruPoruka from '../pages/OmaruPoruka.vue'
 import IchijouRirika from '../pages/IchijouRirika.vue'
 import JuufuuteiRaden from '../pages/JuufuuteiRaden.vue'
+import MoriCalliope from '../pages/MoriCalliope.vue'
 import NanashiMumei from '../pages/NanashiMumei.vue'
 import OuroKronii from '../pages/OuroKronii.vue'
+import FuwaMoco from '../pages/FuwaMoco.vue'
 
 const routes = [
   { 
@@ -41,6 +43,11 @@ const routes = [
     component: JuufuuteiRaden
   },
   { 
+    path: '/moricalliope',
+    name: 'MoriCalliope',
+    component: MoriCalliope
+  },
+  { 
     path: '/nanashimumei',
     name: 'NanashiMumei',
     component: NanashiMumei
@@ -49,6 +56,11 @@ const routes = [
     path: '/ourokronii',
     name: 'OuroKronii',
     component: OuroKronii
+  },
+  { 
+    path: '/fuwamoco',
+    name: 'FuwaMoco',
+    component: FuwaMoco
   },
 ]
 

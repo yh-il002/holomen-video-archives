@@ -8,8 +8,10 @@
         <li><router-link to="/omaruporuka">尾丸ポルカ</router-link></li>
         <li><router-link to="/ichijouririka">一条莉々華</router-link></li>
         <li><router-link to="/juufuuteiraden">儒烏風亭らでん</router-link></li>
+        <li><router-link to="/moricalliope">MoriCalliope</router-link></li>
         <li><router-link to="/nanashimumei">NanashiMumei</router-link></li>
         <li><router-link to="/ourokronii">OuroKronii</router-link></li>
+        <li><router-link to="/fuwamoco">FUWAMOCO</router-link></li>
       </ul>
     </nav>
     <div class="wapper">
