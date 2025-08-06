@@ -4,6 +4,7 @@
       <ul>
         <li><router-link to="/">TOP</router-link></li>
         <li><router-link to="/momosuzunene">桃鈴ねね</router-link></li>
+        <li><router-link to="/omaruporuka">尾丸ポルカ</router-link></li>
         <li><router-link to="/hologura">ホロぐら</router-link></li>
       </ul>
     </nav>
@@ -30,7 +31,7 @@ nav {
     margin: 0 auto;
     padding: 12px 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     background-color: #27c7ff;
     border-radius: 50px;
 
