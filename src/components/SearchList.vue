@@ -1,13 +1,18 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
+// アイテムの型定義
+interface Item {
+  title: string
+  release_date: string
+  youtube_url: string
+  thumbnail_url: string
+}
+
 // 親から受け取るJSONデータ
-const props = defineProps({
-  data: {
-    type: Array,
-    required: true,
-  }
-})
+const props = defineProps<{
+  data: Item[]
+}>()
 
 const keyword = ref('')
 const startDate = ref('')
