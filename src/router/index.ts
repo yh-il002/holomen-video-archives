@@ -6,6 +6,8 @@ import MomosuzuNene from '../pages/MomosuzuNene.vue'
 import OmaruPoruka from '../pages/OmaruPoruka.vue'
 import IchijouRirika from '../pages/IchijouRirika.vue'
 import JuufuuteiRaden from '../pages/JuufuuteiRaden.vue'
+import NanashiMumei from '../pages/NanashiMumei.vue'
+import OuroKronii from '../pages/OuroKronii.vue'
 
 const routes = [
   { 
@@ -37,6 +39,16 @@ const routes = [
     path: '/juufuuteiraden',
     name: 'JuufuuteiRaden',
     component: JuufuuteiRaden
+  },
+  { 
+    path: '/nanashimumei',
+    name: 'NanashiMumei',
+    component: NanashiMumei
+  },
+  { 
+    path: '/ourokronii',
+    name: 'OuroKronii',
+    component: OuroKronii
   },
 ]
 
