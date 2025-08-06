@@ -62,6 +62,16 @@ const filteredData = computed(() => {
 <style lang="scss" scoped>
 @use '../assets/scss/mq' as *;
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .serch-wrap {
   margin: 24px 0;
 
