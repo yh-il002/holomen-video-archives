@@ -75,6 +75,7 @@ select {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: "Google Sans Code", monospace;
 }
 
 a {
