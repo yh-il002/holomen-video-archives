@@ -21,7 +21,7 @@ const inputRef = ref<HTMLInputElement | null>(null)
 
 const filteredData = computed(() => {
   return props.data.filter(item => {
-    const matchesKeyword = item.title.includes(keyword.value)
+    const matchesKeyword = item.title.toLowerCase().includes(keyword.value.toLowerCase())
 
     const itemDate = new Date(item.release_date)
     const start = startDate.value ? new Date(startDate.value) : null
