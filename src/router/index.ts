@@ -11,6 +11,7 @@ import MoriCalliope from '../pages/MoriCalliope.vue'
 import NanashiMumei from '../pages/NanashiMumei.vue'
 import OuroKronii from '../pages/OuroKronii.vue'
 import FuwaMoco from '../pages/FuwaMoco.vue'
+import NerissaRavencroft from '../pages/NerissaRavencroft.vue'
 
 const routes = [
   { 
@@ -67,6 +68,11 @@ const routes = [
     path: '/fuwamoco',
     name: 'FuwaMoco',
     component: FuwaMoco
+  },
+  { 
+    path: '/nerissaravencroft',
+    name: 'NerissaRavencroft',
+    component: NerissaRavencroft
   },
 ]
 

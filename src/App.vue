@@ -13,6 +13,7 @@
         <li><router-link to="/nanashimumei">NanashiMumei</router-link></li>
         <li><router-link to="/ourokronii">OuroKronii</router-link></li>
         <li><router-link to="/fuwamoco">FUWAMOCO</router-link></li>
+        <li><router-link to="/nerissaravencroft">NerissaRavencroft</router-link></li>
       </ul>
     </nav>
     <div class="wapper">
