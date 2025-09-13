@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
     <h1>このサイトは？</h1>
-    <p>ホロライブ所属タレントさんの過去のYouTube動画を検索できるサイトです。<br>YouTube上で ”歌枠” 等で検索をした時に、過去のもの全てが出てこないことがあり、一覧で全てを見れる仕組みがほしかったので自分のために作りました。<br>今後は検索できるタレントさんを増やしていく予定です。<br>自分用に作ったサイトですが、ホロライブリスナーの皆様にも活用していただけたら嬉しいです。</p>
-    <a href="https://x.com/house_mannequin" target="_blank">ハウスマヌカン🍑🥟HouseMannequin（Twitter）</a>
+    <p>ホロライブ所属タレントさんの過去のYouTube動画を検索できるサイトです。<br>YouTube上で ”歌枠” 等で検索をした時に、過去のもの全てが出てこないことがあり、一覧で全てを見れる仕組みがほしかったので自分のために作りました。<br>今後は検索できるタレントさんを増やしていく予定です。</p>
+    <a href="https://x.com/house_mannequin" target="_blank">ハウスマヌカン🍑🥟HouseMannequin（X（旧Twitter））</a>
   </div>
 </template>
 
