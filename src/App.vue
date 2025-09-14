@@ -3,6 +3,8 @@
     <nav id="nav">
       <ul>
         <li><router-link to="/">このサイトは？</router-link></li>
+        <li><router-link to="/timelimit">今年時計</router-link></li>
+        <li><router-link to="/activitytime">ホロメン活動時間</router-link></li>
         <li><router-link to="/hologura">ホロぐら</router-link></li>
         <li><router-link to="/oozorasubaru">大空スバル</router-link></li>
         <li><router-link to="/momosuzunene">桃鈴ねね</router-link></li>
@@ -14,7 +16,6 @@
         <li><router-link to="/ourokronii">OuroKronii</router-link></li>
         <li><router-link to="/fuwamoco">FUWAMOCO</router-link></li>
         <li><router-link to="/nerissaravencroft">NerissaRavencroft</router-link></li>
-        <li><router-link to="/timelimit">今年時計</router-link></li>
       </ul>
     </nav>
     <div class="wapper">

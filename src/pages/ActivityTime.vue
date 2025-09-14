@@ -1,0 +1,72 @@
+<script setup lang="ts">
+import CountUp from '../components/CountUp.vue'
+</script>
+
+<template>
+  <CountUp talent="ときのそら" start="2017/09/07 00:00:00"/>
+  <CountUp talent="ロボ子さん" start="2018/03/09 00:00:00"/>
+  <CountUp talent="AZKi" start="2018/11/15 00:00:00"/>
+  <CountUp talent="さくらみこ" start="2018/08/01 00:00:00"/>
+  <CountUp talent="星街すいせい" start="2018/03/22 00:00:00"/>
+  <CountUp talent="アキ・ローゼンタール" start="2018/06/01 00:00:00"/>
+  <CountUp talent="赤井はあと" start="2018/06/02 00:00:00"/>
+  <CountUp talent="白上フブキ" start="2018/06/01 00:00:00"/>
+  <CountUp talent="夏色まつり" start="2018/06/01 00:00:00"/>
+  <CountUp talent="百鬼あやめ" start="2018/09/03 00:00:00"/>
+  <CountUp talent="癒月ちょこ" start="2018/09/04 00:00:00"/>
+  <CountUp talent="大空スバル" start="2018/09/16 00:00:00"/>
+  <CountUp talent="大神ミオ" start="2018/12/07 00:00:00"/>
+  <CountUp talent="猫又おかゆ" start="2019/04/06 00:00:00"/>
+  <CountUp talent="戌神ころね" start="2019/04/13 00:00:00"/>
+  <CountUp talent="兎田ぺこら" start="2019/07/17 00:00:00"/>
+  <CountUp talent="不知火フレア" start="2019/08/07 00:00:00"/>
+  <CountUp talent="白銀ノエル" start="2019/08/08 00:00:00"/>
+  <CountUp talent="宝鐘マリン" start="2019/08/11 00:00:00"/>
+  <CountUp talent="天音かなた" start="2019/12/27 00:00:00"/>
+  <CountUp talent="角巻わため" start="2019/12/29 00:00:00"/>
+  <CountUp talent="常闇トワ" start="2020/01/03 00:00:00"/>
+  <CountUp talent="姫森ルーナ" start="2020/01/04 00:00:00"/>
+  <CountUp talent="雪花ラミィ" start="2020/08/12 21:00:00"/>
+  <CountUp talent="桃鈴ねね" start="2020/08/13 21:00:00"/>
+  <CountUp talent="獅白ぼたん" start="2020/08/14 21:00:00"/>
+  <CountUp talent="尾丸ポルカ" start="2020/08/16 21:00:00"/>
+  <CountUp talent="ラプラス・ダークネス" start="2021/11/26 00:00:00"/>
+  <CountUp talent="鷹嶺ルイ" start="2021/11/27 00:00:00"/>
+  <CountUp talent="博衣こより" start="2021/11/28 00:00:00"/>
+  <CountUp talent="風真いろは" start="2021/11/30 00:00:00"/>
+  <CountUp talent="火威青" start="2023/09/09 00:00:00"/>
+  <CountUp talent="音乃瀬奏" start="2023/09/09 00:00:00"/>
+  <CountUp talent="一条莉々華" start="2023/09/09 00:00:00"/>
+  <CountUp talent="儒烏風亭らでん" start="2023/09/10 00:00:00"/>
+  <CountUp talent="轟はじめ" start="2023/09/10 00:00:00"/>
+  <CountUp talent="響咲リオナ" start="2024/11/09 00:00:00"/>
+  <CountUp talent="虎金妃笑虎" start="2024/11/09 00:00:00"/>
+  <CountUp talent="水宮枢" start="2024/11/09 00:00:00"/>
+  <CountUp talent="輪堂千速" start="2024/11/09 00:00:00"/>
+  <CountUp talent="綺々羅々ヴィヴィ" start="2024/11/09 00:00:00"/>
+  <CountUp talent="森カリオペ" start="2020/09/12 00:00:00"/>
+  <CountUp talent="小鳥遊キアラ" start="2020/09/12 00:00:00"/>
+  <CountUp talent="一伊那尓栖" start="2020/09/13 00:00:00"/>
+  <CountUp talent="IRyS" start="2021/07/11 00:00:00"/>
+  <CountUp talent="オーロ・クロニー" start="2021/08/23 00:00:00"/>
+  <CountUp talent="ハコス・ベールズ" start="2021/08/23 00:00:00"/>
+  <CountUp talent="シオリ・ノヴェラ" start="2023/07/30 00:00:00"/>
+  <CountUp talent="古石ビジュー" start="2023/07/30 00:00:00"/>
+  <CountUp talent="ネリッサ・レイヴンクロフト" start="2023/07/31 00:00:00"/>
+  <CountUp talent="フワワ・アビスガード" start="2023/07/31 00:00:00"/>
+  <CountUp talent="モココ・アビスガード" start="2023/07/31 00:00:00"/>
+  <CountUp talent="エリザベス・ローズ・ブラッドフレイム" start="2024/06/22 00:00:00"/>
+  <CountUp talent="ジジ・ムリン" start="2024/06/22 00:00:00"/>
+  <CountUp talent="セシリア・イマーグリーン" start="2024/06/23 00:00:00"/>
+  <CountUp talent="ラオーラ・パンテーラ" start="2024/06/23 00:00:00"/>
+  <CountUp talent="アユンダ・リス" start="2020/04/10 00:00:00"/>
+  <CountUp talent="ムーナ・ホシノヴァ" start="2020/04/11 00:00:00"/>
+  <CountUp talent="アイラニ・イオフィフティーン" start="2020/04/12 00:00:00"/>
+  <CountUp talent="クレイジー・オリー" start="2020/12/04 00:00:00"/>
+  <CountUp talent="アーニャ・メルフィッサ" start="2020/12/05 00:00:00"/>
+  <CountUp talent="パヴォリア・レイネ" start="2020/12/06 00:00:00"/>
+  <CountUp talent="ベスティア・ゼータ" start="2022/03/25 00:00:00"/>
+  <CountUp talent="カエラ・コヴァルスキア" start="2022/03/26 00:00:00"/>
+  <CountUp talent="こぼ・かなえる" start="2022/03/27 00:00:00"/>
+</template>
+

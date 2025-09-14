@@ -13,6 +13,7 @@ import OuroKronii from '../pages/OuroKronii.vue'
 import FuwaMoco from '../pages/FuwaMoco.vue'
 import NerissaRavencroft from '../pages/NerissaRavencroft.vue'
 import TimeLimit from '../pages/TimeLimit.vue'
+import ActivityTime from '../pages/ActivityTime.vue'
 
 const routes = [
   { 
@@ -79,6 +80,11 @@ const routes = [
     path: '/timelimit',
     name: 'TimeLimit',
     component: TimeLimit
+  },
+  { 
+    path: '/activitytime',
+    name: 'ActivityTime',
+    component: ActivityTime
   },
 ]
 
