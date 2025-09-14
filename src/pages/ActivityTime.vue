@@ -36,7 +36,7 @@ import CountUp from '../components/CountUp.vue'
   <CountUp talent="風真いろは" start="2021/11/30 00:00:00"/>
   <CountUp talent="火威青" start="2023/09/09 00:00:00"/>
   <CountUp talent="音乃瀬奏" start="2023/09/09 00:00:00"/>
-  <CountUp talent="一条莉々華" start="2023/09/09 00:00:00"/>
+  <CountUp talent="一条莉々華" start="2023/09/09 21:00:00"/>
   <CountUp talent="儒烏風亭らでん" start="2023/09/10 00:00:00"/>
   <CountUp talent="轟はじめ" start="2023/09/10 00:00:00"/>
   <CountUp talent="響咲リオナ" start="2024/11/09 00:00:00"/>
